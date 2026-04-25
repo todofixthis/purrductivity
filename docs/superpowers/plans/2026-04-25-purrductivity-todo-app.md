@@ -8,7 +8,7 @@
 
 **Worktree:** `/Users/phx/Documents/purrductivity` [main]
 
-**Tech Stack:** Vite 6, React 18, TypeScript, Tailwind CSS v4, Vitest, React Testing Library
+**Tech Stack:** Vite 6, React 19, TypeScript, Tailwind CSS v4, Vitest, React Testing Library
 
 > **⚠️ Intentional Omission:** Marking tasks as complete is deliberately **not** implemented. This feature gap exists to be filled live during a coding agent demo.
 
