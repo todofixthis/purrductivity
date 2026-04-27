@@ -1,4 +1,4 @@
-import type { FC } from 'react'
+import type { FC, FormEvent } from 'react'
 import { useState } from 'react'
 
 type Props = {
@@ -8,7 +8,8 @@ type Props = {
 const AddTask: FC<Props> = ({ onAdd }) => {
   const [value, setValue] = useState('')
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
     const trimmed = value.trim()
     if (!trimmed) return
     onAdd(trimmed)
@@ -16,7 +17,7 @@ const AddTask: FC<Props> = ({ onAdd }) => {
   }
 
   return (
-    <div className="flex gap-2">
+    <form className="flex gap-2" onSubmit={handleSubmit}>
       <input
         aria-label="New task"
         className="flex-1 rounded-lg border border-orange-200 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
@@ -27,12 +28,11 @@ const AddTask: FC<Props> = ({ onAdd }) => {
       />
       <button
         className="rounded-lg bg-orange-500 px-4 py-2 font-semibold text-white hover:bg-orange-600"
-        onClick={handleSubmit}
-        type="button"
+        type="submit"
       >
         Add Purrject
       </button>
-    </div>
+    </form>
   )
 }
 

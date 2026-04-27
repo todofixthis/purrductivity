@@ -33,3 +33,13 @@ test('does not call onAdd when input is blank', async () => {
 
   expect(onAdd).not.toHaveBeenCalled()
 })
+
+test('submits when Enter is pressed in the input', async () => {
+  const onAdd = vi.fn()
+  const user = userEvent.setup()
+  render(<AddTask onAdd={onAdd} />)
+
+  await user.type(screen.getByRole('textbox'), 'Feed the cat{Enter}')
+
+  expect(onAdd).toHaveBeenCalledWith('Feed the cat')
+})
