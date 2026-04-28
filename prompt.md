@@ -1,6 +1,6 @@
-Kia ora. Our kaupapa today is to implement the ability to mark tasks as completed.
+Kia ora. Our kaupapa today is to implement the ability to mark todo items as completed.
 
-When a task is completed, the text gains strikethrough formatting, and the 'mark completed' control turns into 'mark uncompleted'.
+When a todo item is completed, the text gains strikethrough formatting, and the 'mark completed' control turns into 'mark uncompleted'.
 
 Follow TDD practices to test and implement the functionality.
 
@@ -12,4 +12,4 @@ Your tasks:
 2. Dispatch a reviewer subagent and address any issues with the plan.
 3. User reviews the plan. Pause here and wait for feedback.
 
-Ask me any questions needed before starting.
+Ask me any questions needed before starting the mahi.
