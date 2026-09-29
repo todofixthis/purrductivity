@@ -9,7 +9,7 @@ Ensure the cat theme is consistent throughout the solution.
 Your tasks:
 
 1. Write a plan file laying out the design of the solution and implementation tasks. Ensure the end of each task has: 1) dispatch a plan compliance subagent and fix any issues, 2) dispatch a code review subagent and fix any issues.
-2. Dispatch a reviewer subagent and address any issues with the plan.
+2. Dispatch a plan reviewer subagent and address any issues.
 3. User reviews the plan. Pause here and wait for feedback.
 
-Ask me any questions needed before starting the mahi.
+Ask me any pataī needed before starting the mahi.
